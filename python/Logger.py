@@ -1,7 +1,12 @@
 import os
 import logging
 import datetime
-
+'''
+    logFile預設為當天日期
+    level要記錄的等級
+    format訊息格式
+    datefmt時間格式
+'''
 class Logger:
     def __init__(self,
                  logFile = str(datetime.date.today()).replace("-", ""),
